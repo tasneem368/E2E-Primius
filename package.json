@@ -1,0 +1,32 @@
+{
+  "name": "e2e-primius",
+  "version": "1.0.0",
+  "description": "E2E TESTING FOR PRIMIUS",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:platform": "playwright test tests/primius/platform.spec.js",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "test:report": "playwright show-report",
+    "test:ci": "playwright test --reporter=html,github"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FastAutomate/E2E-Primius.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/FastAutomate/E2E-Primius/issues"
+  },
+  "homepage": "https://github.com/FastAutomate/E2E-Primius#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.0",
+    "dotenv": "^16.4.5"
+  }
+}
